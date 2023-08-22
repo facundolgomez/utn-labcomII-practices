@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario de datos personales</h1>
+    <form>
+        <fieldset>
+            <legend>Informacion personal</legend>
+            <label for="student">ESTUDIANTE: </label><br>
+            <input type="text" id="student" name="estudiante"><br><br>
+
+            <label for="name">Nombre completo: </label><br>
+            <input type="text" id="name" name="nombre-completo" placeholder="Introduzca su nombre completo" maxlength="30" style="width: 200px;"><br><br>
+
+            <label for="email">Email: </label><br>
+            <input type="email" id="email" name="correo-electronico" placeholder="Email"><br><br>
+            
+            <label for="age">Edad: </label><br>
+            <input type="number" min="6" id="age" name="edad"><br><br>
+
+            <label for="nationality">Nacionalidad: </label><br>
+            <select id="nationality" name="Nacionalidad">
+                <option value="Argentino" selected>Argentino/a</option>
+                <option value="Brasileño">Brasileño/a</option>
+                <option value="Estaoudinense">Estaoudinense</option>
+                <option value="Canadiense">Canadiense</option>
+                <option value="Boliviano">Boliviano</option>
+                <option value="Belga">Belga</option>
+                <option value="Aleman">Alemana</option>
+                <option value="Chileno">Chileno/a</option>
+                <option value="Colombiano">Colombiano/a</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="working-condition">Condicion laboral:</label><br>
+            <select id="working-condition" name="Trabajo">
+                <option value="Desempleado">Desempleado/a</option>
+                <option value="Busqueda-laboral">En busqueda laboral</option>
+                <option value="Part-time">Trabajo part time</option>
+                <option value="Full-time">Trabajo full time</option>
+            </select>
+        </fieldset>
+        
+        <br>
+        
+        <fieldset>
+            <legend>Gustos personales</legend>
+            <label for="music">Gustos musicales</label>
+            <textarea id="music" name="gustos-musicales" rows="4" cols="50"></textarea>
+            
+            <br>
+            <br>
+
+            <label for="food">Comidas favoritas</label>
+            <select id="food" name="Comidas">
+                <option value="Pollo con papas">Pollo con papas</option>
+                <option value="Asado" selected>Asado</option>
+                <option value="Arroz-con-pollo">Arroz con pollo</option>
+                <option value="Canelones-de-jamon-y-queso">Canelones de jamon y queso</option>
+                <option value="Sorrentinos">Sorrentinos</option>
+                <option value="Pizzanesa">Pizzanesa</option>
+                <option value="Milanesa-con-papas">Milanesa con papas</option>
+                <option value="Pizza-especial">Pizza especial</option>
+            
+            </select>
+
+            <button type="submit">Enviar</button><br>
+
+            <label for="check">Guardar datos</label>
+            <input type="checkbox" id="check">
+        </fieldset>
+    </form>
+    
+</body>
+</html>
+
+
+
+
